@@ -1,9 +1,0 @@
-$xor<
-   import $xor<Database.xordb,
-               FingerPrintUSBScanner.xor,
-               IndexedSeriel.xor,
-               MemesAddon.xor>
-
-
-               xor.scripts.download_utils(go_to xor[1]);
-> end:
