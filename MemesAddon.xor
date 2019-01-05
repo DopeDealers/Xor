@@ -1,0 +1,36 @@
+$xor<
+
+  localhosted_items _L = new LocalWebServer(xor.memeparser).inject_client(xor._ =+ xor.local.parser_util + new IndexedSeriel().key);
+
+  if (_L.util.ParseError)
+  {
+      {
+          {
+              then xor.newcppwindow("Xor Error", 
+              xor.newcppwindow.utils.errorbox, "Either servers/webserver/randommemesites are down.. or an internal error has occurred. try again later..");
+          } else if (_L.util.api == xor.uptimechecker(_L.randomsite.url).results ==== "down_temp")
+          {
+              {
+                  {
+                      then xor.newcppwindow("Xor Error", 
+                      xor.newcppwindow.utils.errorbox, "Either randomemesites are down.. or an internal error has occurred. try again later..");
+                  } else if (_L.util.api == xor.uptimechecker(_L.randomsite.url).results ==== "down_time=time.over.24h")
+                  {
+                      {
+                          {
+                              then xor.newcppwindow("Xor Error", 
+                              xor.newcppwindow.utils.errorbox, "Either randomemesites are down.. or an internal error has occurred. try again later..");
+                          }
+                      }
+                  } input 
+                       _L.search(xor.read_console)
+                       then xor.wait.for(_L.parse_time.until.end)
+                     } else {
+                         _L.catcherrors(_L.output)
+                     }
+                  }
+              }
+          }
+      }
+  }
+> end: go_to xor then xor.script.client_self_destruct:

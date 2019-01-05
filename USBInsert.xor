@@ -1,0 +1,5 @@
+$xor<
+
+    USB _u = new ExternalDrive(xor.hook[1])
+
+>

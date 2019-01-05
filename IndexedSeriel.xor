@@ -1,0 +1,45 @@
+$xor<
+
+  variable key("gfgjshdfgysidfgxayiesufgcuyiasfgsuyifwse");
+  from ServersIndexing.xor to ServerController.cpp
+  from RandomSaltHash.py to IndexedSeriel.xor 
+  RandomSaltHash afb14fa7c545d8f65f2b1a133b3c9106 = new RandomSaltHash(ServerController, key);
+
+  ServersIndexing opium = new ServerController(["de49de42fe7d3850a06046cd70ca908f48c1a6f7", 
+                                                "de49de42fe7d3850a06046cd70GFYCusaTYGDFCV",
+                                                "805078086a1b3335ce75594393ce3e09c00bc43f",
+                                                "3548dfab695caae0078359731ed46ae73d508fd8",
+                                                "1fd96595500f8ebdcac83233a4662f7bec2bb5d8",
+                                                "1fbc955b1058d77ad16b4aa948869db5832c73cd",
+                                                "884e98492a78d6c930f2c46057b4b2817ca9f5ff",
+                                                "820ab8bb7ed72ae7e613173111e37c0e5c5973cc"]);
+
+  import opium(key, afb14fa7c545d8f65f2b1a133b3c9106);
+
+  if $xor.script==false 
+  {
+      {
+          {
+              import xor.System.Admin.Accept;
+              then xor.wait = 10seconds 
+              then xor.newcppwindow("Xor updater", 
+              xor.newcppwindow.utils.errorbox, "please click install to update the system", 
+              xor.hashing.aesencryption.installbutton.installdepends);
+          }
+      }
+  }
+
+  if $xor.script==true 
+  {
+      {
+          {
+              import xor.System.Admin.Accept;
+              then xor.wait = 10seconds
+              then xor.continue;
+          }
+      }
+  }
+
+
+  
+> end: parse_system_info = variable os ("windows.x" || "linux.x.forks" || "macos.x || .forks") system.parse_system_info(os):
