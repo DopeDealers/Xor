@@ -1,0 +1,6 @@
+$xor<
+ // just starts Xero one of the main archs
+ Xero global =; _s = new Xero("server://xor.host.b61272bbe9aeee221109299d574b4cc8.ftp/index.xor.aspx")
+
+ xor.Start(_s)
+>

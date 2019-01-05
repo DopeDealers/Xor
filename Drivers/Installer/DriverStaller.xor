@@ -1,0 +1,4 @@
+$xor<
+  // bad method but works
+  xor.Check(new Adapters()).install_if_not();
+>

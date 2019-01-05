@@ -1,0 +1,18 @@
+$xor<
+  Drive _d = new InternalDrive(xor.hook[2]);
+
+  variable _h = { "hdd" || "ssd" || "pcie" || "m.2" };
+
+    if (_d.drive === _h.list)
+    {
+        {
+            {
+                xor.file_man(list[_h(Object classed; new InternalDrive(_h.list.chosen_name))]);
+            } else if {
+                _d.catcherrors(_d.output)
+            }
+        }
+    }
+
+    
+> end: parse_system_info = variable os ("windows.x" || "linux.x.forks" || "macos.x" || ".forks") system.parse_system_info(os):

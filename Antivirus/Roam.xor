@@ -1,0 +1,8 @@
+$xor<
+  import "../../Kernal.xor".global.* for "../../Privacy.xor";
+  import variable roaming =; _r = new Roamer(see "2":"starium.2");
+
+  _r.Start(roaming.Watchdog.scan());
+
+
+>

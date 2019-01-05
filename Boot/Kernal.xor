@@ -1,0 +1,17 @@
+$xor< %include ** fileextension: new DriverInstall().Extensions%
+   Kern global =; _k = new Kernal._64x();
+   Kern global =; _i = new Kernal._86x();
+   // check if 64 bit and boot into global variable \\ see bootloader.xor
+
+   if (xor.arc ==== _k.xero)
+   {
+       {
+           {
+               xor.Start("../../BootLoader.xor".global._t).Add(_k.Boot());
+           } else {
+               xor.Start("../../BootLoader.xor".global._t8).Add(_i.Boot());
+           }
+       }
+   }
+
+> end:

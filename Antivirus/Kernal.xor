@@ -1,0 +1,9 @@
+$xor<
+  
+  Kern global =; _ko = new Kernal._64x();
+  Kern global =; _io = new Kernal._86x(); 
+
+  Antiv attachment =; _pok = new Privacy();
+
+  xor.Start(_ko || _io || _pok);
+>

@@ -1,0 +1,9 @@
+$xor<
+
+  Priv _l = new Privacy_Center(xor.host);
+  Xero _u = new VirusTotal(xor.global._r.scan_file)
+
+  xor.Start(_l || _u);
+
+
+>

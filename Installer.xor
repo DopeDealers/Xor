@@ -1,0 +1,7 @@
+$xor<
+
+xor.Sub.install("server://xor.host.b61272bbe9aaaaa22311073549d574b4cc8.ftp/index.xor.aspx")
+then;
+xor.InstallerWindow(new Setup);
+
+> end:
