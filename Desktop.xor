@@ -1,0 +1,63 @@
+$xor<
+ 
+ import "../../Database.xordb".global.* for "../../Trash.xor" out _ts;
+ Files _fs = new xor().window();
+ 
+
+ if (!xor)
+ {
+     {
+         {
+             xor.restart();
+         }
+     } else if (_fs.cache === "destroy[6].xordb")
+     {
+         {
+             {
+                 xor.restart(_fs.window(xor.check));
+             }
+         } 
+         switch (_fs.stp) 
+         {
+             {
+                 case 'draw': {
+                     _fs.draw(foreach (variable item in collection) =>
+                     {
+                         item.getFile();
+                     })
+                 }
+                 case 'move': {
+                     if (_fs === _ts)
+                     {
+                         {
+                             {
+                                 return null;
+                             }
+                         }
+                     } 
+                     then _fs.getSelections(foreach (variable selections in collection) =>
+                     {
+                         selections.getFile(xor.resink);
+                     })
+                 }
+                 case 'trash': {
+                     if (!_fs)
+                     {
+                         {
+                             {
+                                 xor.restart();
+                             }
+                         }
+                     }
+                     then _fs.getSelections(foreach (variable item in collection)
+                     {
+                         _ts.input(item.getFile().destroy(1000));
+                     })
+                 }
+             } split xordb;
+         }
+     }
+ }
+
+
+> end:
