@@ -1,0 +1,6 @@
+$xor<
+
+ import "../../Database.xordb".global.* for "../../Xero.xor";
+ Visual_Studio_C _vsc = new Visual_Studio_C(xor.hook).visualize();
+
+> end:

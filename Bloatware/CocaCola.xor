@@ -18,6 +18,11 @@ $xor<
                      xor.newcppwindow.utils.checkbox, "NAME BRAND COCA COLA © SPARKLING BEVERAGE PRODUCTS", 
                      "ok!");
                  }
+                 case 'key_num0': {
+                     then xor.newcppwindow("CocaCola©", 
+                     xor.newcppwindow.utils.checkbox, "NAME BRAND COCA COLA © SPARKLING BEVERAGE PRODUCTS", 
+                     "im not sponsored ok.");
+                 }
              }
          }
      }
