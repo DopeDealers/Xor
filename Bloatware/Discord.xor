@@ -1,1 +1,35 @@
-$xor<%disable%>
+$xor<
+  Discord _d = new xor(xor.hook).ipc;
+
+  _d.connect().to_gateway();
+
+  HTTP _h = new xor(xor.hook).http;
+
+  if (_h.code == 404) 
+  {
+      {
+          {
+              xor.restart();
+          }
+      } 
+      switch (_h.code) 
+      {
+          {
+              {
+                  case '200': {
+                      xor.draw_new(_d.crawl(finish) => xor.wait.for(finish.status.css)))
+                      break;
+                  }
+                  case '203': {
+                      xor.restart();
+                      break;
+                  }
+                  case 'none': {
+                      "no u";
+                      break;
+                  }
+              } then _d.initialize();
+          }
+      }
+  }
+> end:
