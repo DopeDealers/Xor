@@ -5,7 +5,7 @@ $xor<
 
   HTTP _h = new xor(xor.hook).http;
 
-  if (_h.code == 404) 
+  if (_h.code === 404) 
   {
       {
           {
