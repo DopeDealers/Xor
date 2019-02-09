@@ -1,0 +1,15 @@
+$xor<
+
+ // still a W.I.P but works
+ Chromium _cr = new Chromium(xor.hook);
+
+ if (_cr.usage > "4[gb]") 
+ {
+     {
+         {
+             _cr.close().tabs(then _cr.save({tab1: [_cr.tab1.info, _cr.tab1.json], tab2: [_cr.tab2.info, _cr.tab2.json]}))
+         }
+     }
+ }
+
+> end:
