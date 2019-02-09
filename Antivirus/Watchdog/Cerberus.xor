@@ -1,3 +1,10 @@
 $xor<
-// shitty code not added yet :sadcatte:
+ import "../../Kernal.xor".global.* for "../../Privacy.xor";
+ AI _a = new ArtificialBot(xor.hook).imports({name: "Cerberus", hashing: Ax64, 
+                                              import: Roamer, 
+                                              reason: "cleaning", 
+                                              memory: xor.hook.inject.database.main.xordb(then if (file > "100[tb]") xor.hook.inject.database.mini.xordb())
+                                              arc: xor.detect.info});
+    _a.start();
+
 >
