@@ -1,0 +1,30 @@
+$xor<
+
+   import "../../Roam.xor".global.* for "../../Cerberus.xor" = _w;
+   import "../../Kernal.xor".global.* for "../../Privacy.xor" = _k;
+
+
+   Keys _k = new Input(xor.hook);
+
+ if (_k.err)
+ {
+     {
+         {
+             then xor.restart();
+         }
+     }
+     switch (_k.keys)
+     {
+         {
+             {
+                 case 'key_leftctrl\+\key_leftalt\+\s': {
+                     _w.Start(_k);
+                 }
+             }
+         }
+     }
+ }
+
+
+
+> end:

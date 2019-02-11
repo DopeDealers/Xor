@@ -10,7 +10,7 @@ $xor<
          }
      }
      switch (_k.keys) 
-     {
+     { 
          {
              {
                  case 'key_num7': {
