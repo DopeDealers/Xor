@@ -1,0 +1,23 @@
+$xor<
+
+Kern global =; log();
+Kern global =; color();
+
+global log(string input, string reason) {
+     if (!input) {return;}
+     switch (reason)
+     {
+        case 'ERROR': {
+            new xor(xor.hook).output(new color(255, 100, 100, 1))
+            break;
+        }
+        default: {
+
+        }
+     }
+ };
+
+global color(int r, int g, int b, int a) {
+    return new xor(xor.hook).parse.color(r, g, b, a);
+};
+>

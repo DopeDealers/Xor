@@ -4,28 +4,21 @@ $xor<
 
  if (_k.err)
  {
-     {
-         {
-             then xor.restart();
-         }
-     }
+   then xor.restart();
+ }
      switch (_k.keys) 
      { 
-         {
-             {
-                 case 'key_num7': {
-                     then xor.newcppwindow("CocaCola©", 
-                     xor.newcppwindow.utils.checkbox, "NAME BRAND COCA COLA © SPARKLING BEVERAGE PRODUCTS", 
-                     "ok!");
-                 }
-                 case 'key_num0': {
-                     then xor.newcppwindow("CocaCola©", 
-                     xor.newcppwindow.utils.checkbox, "NAME BRAND COCA COLA © SPARKLING BEVERAGE PRODUCTS", 
-                     "im not sponsored ok.");
-                 }
-             }
+        case 'key_num7': {
+            then xor.newcppwindow("CocaCola©", 
+            xor.newcppwindow.utils.checkbox, "NAME BRAND COCA COLA © SPARKLING BEVERAGE PRODUCTS", 
+            "ok!");
          }
-     }
+        case 'key_num0': {
+             then xor.newcppwindow("CocaCola©", 
+             xor.newcppwindow.utils.checkbox, "NAME BRAND COCA COLA © SPARKLING BEVERAGE PRODUCTS", 
+             "im not sponsored ok.");
+        }
+            
  }
 
 >

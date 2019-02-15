@@ -4,12 +4,8 @@ $xor<
    Video _v2 = new VideoAdapter(xor.adapters.["asus" || "msi" || "nvidia" || "gigabyte" || "amd" || "evga"].product(new VideoCardFinder(["gtx" || "rtx" || "DEP"])));\
    
    if (_v2 === "attach")
-   {
-       {
-           {
-               import Video(_p.list.chosen_name);
-           }
-       }
+   { 
+         import Video(_p.list.chosen_name);
    }
 
 

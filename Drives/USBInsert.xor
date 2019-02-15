@@ -6,13 +6,10 @@ $xor<
 
     if (_u.drive === _d.list)
     {
-        {
-            {
                 xor.file_man(list[_d(Object classed; new ExternalDrive(_d.list.chosen_name))]);
             } else if {
                 _u.catcherrors(_u.output)
             }
-        }
     }
         
 

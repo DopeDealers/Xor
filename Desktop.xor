@@ -5,21 +5,15 @@ $xor<
  
 
  if (!xor)
- {
+    {
+       xor.restart();
+    }
+ if (_fs.cache === "destroy[6].xordb")
      {
-         {
-             xor.restart();
-         }
-     } else if (_fs.cache === "destroy[6].xordb")
-     {
-         {
-             {
                  xor.restart(_fs.window(xor.check));
-             }
-         } 
+     }
          switch (_fs.stp) 
          {
-             {
                  case 'draw': {
                      _fs.draw(foreach (variable item in collection) =>
                      {
@@ -29,11 +23,7 @@ $xor<
                  case 'move': {
                      if (_fs === _ts)
                      {
-                         {
-                             {
-                                 return null;
-                             }
-                         }
+                         return null;
                      } 
                      then _fs.getSelections(foreach (variable selections in collection) =>
                      {
@@ -43,21 +33,15 @@ $xor<
                  case 'trash': {
                      if (!_fs)
                      {
-                         {
-                             {
-                                 xor.restart();
-                             }
-                         }
+                        xor.restart();
+                    
                      }
                      then _fs.getSelections(foreach (variable item in collection)
                      {
                          _ts.input(item.getFile().destroy(1000));
                      })
-                 }
-             } split xordb;
-         }
-     }
- }
+         } split xordb;
+    }
 
 
 > end:

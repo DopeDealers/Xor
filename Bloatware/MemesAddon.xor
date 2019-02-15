@@ -1,3 +1,5 @@
+/* 
+DEPRECATED
 $xor<
 
   localhosted_items _L = new LocalWebServer(xor.memeparser).inject_client(xor._ =+ xor.local.parser_util + new IndexedSeriel().key);
@@ -33,4 +35,4 @@ $xor<
           }
       }
   }
-> end: go_to xor then xor.script.client_self_destruct:
+> end: go_to xor then xor.script.client_self_destruct: */

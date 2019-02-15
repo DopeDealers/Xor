@@ -16,28 +16,20 @@ $xor<
 
   import opium(key, afb14fa7c545d8f65f2b1a133b3c9106);
 
-  if $xor.script==false 
+  if ($xor.script==false)
   {
-      {
-          {
               import xor.System.Admin.Accept;
               then xor.wait = 10seconds 
               then xor.newcppwindow("Xor updater", 
               xor.newcppwindow.utils.errorbox, "please click install to update the system", 
               xor.hashing.aesencryption.installbutton.installdepends);
-          }
-      }
   }
 
-  if $xor.script==true 
+  if (xor.script==true)
   {
-      {
-          {
               import xor.System.Admin.Accept;
               then xor.wait = 10seconds
               then xor.continue;
-          }
-      }
   }
 
 

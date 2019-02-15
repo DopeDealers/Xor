@@ -5,13 +5,11 @@ $xor<
 
     if (_d.drive === _h.list)
     {
-        {
-            {
                 xor.file_man(list[_h(Object classed; new InternalDrive(_h.list.chosen_name))]);
             } else if {
                 _d.catcherrors(_d.output)
             }
-        }
+
     }
 
     

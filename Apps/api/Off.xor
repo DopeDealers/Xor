@@ -1,0 +1,11 @@
+$xor<
+
+Kern global =; off();
+
+ global off(int input, string checksum) {
+     variable _m = xor.getMotherboard();
+     if (!input) {{{return null;}}}
+     if (!checksum) {{{return null;}}}
+     else if (input) {{{return _m.getPowerOffPin(checksum)}}}
+ };
+>

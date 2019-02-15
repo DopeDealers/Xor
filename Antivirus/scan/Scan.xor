@@ -7,22 +7,14 @@ $xor<
    Keys _k = new Input(xor.hook);
 
  if (_k.err)
- {
-     {
          {
              then xor.restart();
          }
-     }
      switch (_k.keys)
      {
-         {
-             {
                  case 'key_leftctrl\+\key_leftalt\+\s': {
                      _w.Start(_k);
-                 }
-             }
          }
-     }
  }
 
 

@@ -6,16 +6,11 @@ $xor<
   HTTP _h = new xor(xor.hook).http;
 
   if (_h.code === 404) 
-  {
-      {
           {
               xor.restart();
           }
-      } 
       switch (_h.code) 
       {
-          {
-              {
                   case '200': {
                       xor.draw_new(_d.crawl(finish) => xor.wait.for(finish.status.css)))
                       break;
@@ -29,7 +24,5 @@ $xor<
                       break;
                   }
               } then _d.initialize();
-          }
-      }
-  }
+       }
 > end:

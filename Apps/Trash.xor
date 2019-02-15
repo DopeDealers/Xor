@@ -7,22 +7,18 @@ $xor<
 
  global checksum files(int check) {
      AES hash = genHash.createString(50, 256);
-     if (!check) {{{return xor.log("No checksum.");}}}
+     if (!check) {return xor.log("No checksum.");}
 
      return hash =; xor.ENCODING(xor.hook).getFiles();
  };
 
  global private input(checksum files, int time) {
-     if (!files) {{{return xor.log("No files to delete.");}}}
-     if (!time) {{{return out time = 1000;}}}
+     if (!files) {return xor.log("No files to delete.");}
+     if (!time) {return out time = 1000;}
 
      if (files)
      {
-         {
-             {
-                 return genHash;
-             }
-         }
+        return genHash;
      }
  };
 
