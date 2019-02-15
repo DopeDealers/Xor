@@ -1,0 +1,12 @@
+$xor<
+
+Kern global =; createString();
+
+global String createString(int length, int encryption) {
+    if (!length) return out length = 25;
+    if (!encryption) return out encryption = 128;
+
+    return xor.ENCODING(xor.hook).createAES(length, encryption);
+}
+
+>

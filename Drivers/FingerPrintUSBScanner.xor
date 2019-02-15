@@ -2,7 +2,7 @@ $xor<%include ** fileextension: javascript%
 
  <xor.include * fileextension>{
      if (xor.code.ran== "mac".includes("trace")) {
-         return xor.log(xor.color.rectangle.red.whitetext + "ERROR YOU MAY NOT RUN TRACING WITH XOR ON THIS USB.. EXITING SCRIPT..");
+         return xor.log("ERROR YOU MAY NOT RUN TRACING WITH XOR ON THIS USB.. EXITING SCRIPT..");
 
      }
 
