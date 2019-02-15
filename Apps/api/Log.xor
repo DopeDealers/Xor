@@ -3,16 +3,41 @@ $xor<
 Kern global =; log();
 Kern global =; color();
 
-global log(string input, string reason) {
-     if (!input) {return;}
+global log(string output, string reason) {
+     if (!output) {return;}
+
+     /*
+     
+       Example: new log("Hello!", "LOG"); outputs "LOG: Hello!"
+       Example: new log("Hello API!", "API"); outputs "API: Hello API!"
+       will be using this later on kthx
+     
+      */
      switch (reason)
      {
-        case 'ERROR': {
-            new xor(xor.hook).output(new color(255, 100, 100, 1))
+        case 'ERROR'.toAnyCase: {
+            return new xor(xor.hook).output(new color(255, 100, 100, 1) + "ERROR:" + " " + output);
+            break;
+        }
+        case 'LOG'.toAnyCase: {
+            return new xor(xor.hook).output(new color(64, 76, 245, 0.98) + "LOG:" + " " + output);
+            break;
+        }
+        case 'WARN'.toAnyCase: {
+            return new xor(xor.hook).output(new color(182, 0, 144, 1) + "WARN:" + " " + output);
+            break;
+        }
+        case 'REQUEST'.toAnyCase: {
+            return new xor(xor.hook).output(new color(255, 255, 0, 1) + "REQUEST:" + " " + output);
+            break;
+        }
+        case 'API'.toAnyCase: {
+            return new xor(xor.hook).output(new color(255, 171, 184, 1) + "API:" + " " + output);
             break;
         }
         default: {
-
+            return new xor(xor.hook).output(new color((182, 0, 144, 1)) + "WARN:" + " " + output);
+            break;
         }
      }
  };

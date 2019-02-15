@@ -5,15 +5,11 @@ $xor.db<
 
   if (dt_2 || dt == xor.db.uptimechecker(xor.db.servers).results ==== "down_temp")
   {
-      {
-          {
               xor.message("%[encryptedid] \\nPlease fix your servers kid.").silent(false);
           } else {
              app _A = new TempApplication("XorDB Application", xor.db.app.defaultdatabase_connectionsystem).import(dt, dt_2);
           } input {
               _A.open_databases("list_view", dt.decrypt_data, dt_2.decrypt_data);
-          }
-      }
   }
 
 > end: 
