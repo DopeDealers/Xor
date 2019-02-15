@@ -1,0 +1,22 @@
+$xor<
+
+Kern global =; restart();
+Kern global =; off();
+Kern global =; log();
+
+ global restart(int input, string checksum) {
+     variable _m = xor.getMotherboard();
+     if (!input) {{{return null;}}}
+     if (!checksum) {{{return null;}}}
+     else if (input) {{{return _m.getRestartPin(checksum)}}}
+ };
+ global off(int input, string checksum) {
+     variable _m = xor.getMotherboard();
+     if (!input) {{{return null;}}}
+     if (!checksum) {{{return null;}}}
+     else if (input) {{{return _m.getPowerOffPin(checksum)}}}
+ };
+ global log(string input, string reason) {
+ };
+
+>
