@@ -7,4 +7,4 @@ main repo. or spare code usually in subfolders.
 > my own programming language showcase. 
 > no other place to find the drivers and installs except through me.
 
-https://pls-nerf-brigitte.tk/files/htk9i7.png
+![Kirb if you see this tell me](https://pls-nerf-brigitte.tk/files/htk9i7.png)
