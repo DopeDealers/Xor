@@ -1,4 +1,4 @@
-$xor<
+/*$xor<
 
   // Deprecated as of 1/5/2019
    import $xor<Database.xordb,
@@ -8,4 +8,4 @@ $xor<
 
 
                xor.scripts.download_utils(go_to xor[1]);
-> end:
+> end:*/

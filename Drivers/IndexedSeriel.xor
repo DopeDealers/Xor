@@ -1,20 +1,40 @@
 $xor<
 
   variable key("gfgjshdfgysidfgxayiesufgcuyiasfgsuyifwse");
-  from ServersIndexing.xor to ServerController.cpp
-  from RandomSaltHash.py to IndexedSeriel.xor 
+  import "xor/enc/../../ServersIndexing.xor".global.* for "xor/enc/../../ServerController.c" out ServersIndexing;
+  import "xor/enc/../../RandomSaltHash.py".global.* for "xor/enc/../../IndexedSeriel.xor" out RandomSaltHash;
   RandomSaltHash afb14fa7c545d8f65f2b1a133b3c9106 = new RandomSaltHash(ServerController, key);
 
-  ServersIndexing opium = new ServerController(["de49de42fe7d3850a06046cd70ca908f48c1a6f7", 
-                                                "de49de42fe7d3850a06046cd70GFYCusaTYGDFCV",
-                                                "805078086a1b3335ce75594393ce3e09c00bc43f",
-                                                "3548dfab695caae0078359731ed46ae73d508fd8",
-                                                "1fd96595500f8ebdcac83233a4662f7bec2bb5d8",
-                                                "1fbc955b1058d77ad16b4aa948869db5832c73cd",
-                                                "884e98492a78d6c930f2c46057b4b2817ca9f5ff",
-                                                "820ab8bb7ed72ae7e613173111e37c0e5c5973cc"]);
+  // Add points + new server controller indexing, Add friends and googles temp servers
 
-  import opium(key, afb14fa7c545d8f65f2b1a133b3c9106);
+  /*
+   access-bluestark access: a company i helped a few months ago, currently over 300 servers in 3 countries private govern company but yeye xor in sweden ireland and canada
+   jap+ck access: a data center a friend of mine owns in japan so YEYE xor in japan
+   goo.gl access: self explanitory lul, but using 4 different states in the access in america
+   xor-servers access: my servers: hosted in florida
+   */
+  ServersIndexing opium = new ServerController(["xor-servers://de49de42fe7d3850a06046cd70ca908f48c1a6f7.", 
+                                                "xor-servers://de49de42fe7d3850a06046cd70GFYCusaTYGDFCV",
+                                                "xor-servers://805078086a1b3335ce75594393ce3e09c00bc43f",
+                                                "xor-servers://3548dfab695caae0078359731ed46ae73d508fd8",
+                                                "xor-servers://1fd96595500f8ebdcac83233a4662f7bec2bb5d8",
+                                                "xor-servers://1fbc955b1058d77ad16b4aa948869db5832c73cd",
+                                                "xor-servers://884e98492a78d6c930f2c46057b4b2817ca9f5ff",
+                                                "xor-servers://820ab8bb7ed72ae7e613173111e37c0e5c5973cc",
+                                                "xor-servers://58cf5a21f3ce96aa91803f73a0e159684326f54b",
+                                                "xor-servers://93041c33429ddf06bfdac95349356e488d3bd838",
+                                                "access-bluestark://c00900fc9826c50d1b9e2bf8a661175133074148",
+                                                "access-bluestark://44946d259bf4d95eed1a776375df8d7f787f1de2",
+                                                "jap+ck://cM+PJNoct5gRSCYMyZ987w==key?xor",
+                                                "jap+ck://WcuM4TsENsEyJFFjjhoyqQ==key?xor",
+                                                "jap+ck://hmi24ZNwL+pAd/CSP5t+vA==key?xor",
+                                                "jap+ck://oGLcSlaAWt5/J/LGAjW74Q==key?xor",
+                                                "goo.gl://ebwZ97LBYIPryjuhDhEdNhK6XRII/P3MNJTQGTJced0==key?xor",
+                                                "goo.gl://m6QJT0KpnrnW4n4B7Jqho4OdmvTVEt/nf8ODWLuUCxc==key?xor",
+                                                "goo.gl://ZCDslE03/WmAe1VNCLQjg74KRYasbO01dx7ea7diJeQ==key?xor",
+                                                "goo.gl://ygTkgsbGh6kG7MtYnOxhkxtqhA0aPnmN/5TNADMrnMs==key?xor"]);
+
+  stack opium(key, afb14fa7c545d8f65f2b1a133b3c9106);
 
   if ($xor.script==false)
   {

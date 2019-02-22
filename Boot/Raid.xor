@@ -1,0 +1,17 @@
+$xor<
+ import "../../InternalDrive.xor".global.* for "../../AES.xor" out _r;
+ Raiding _r2 = new Computing(xor.hook).concept(_r).g(xor =; Raiding xor);
+
+ if (!_r) {
+     dont;
+ }
+ if (_r > _r2.getDrive.length === 10) {
+              then xor.wait = 10seconds 
+              then xor.newwindow("Xor Notif", 
+              xor.newwindow.utils.errorbox, "Too many cards for [RAID]", 
+              "ok".reset);
+ }
+ // fixing soon but raiding checks for too many work behehehe
+
+
+>

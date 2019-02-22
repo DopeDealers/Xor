@@ -3,12 +3,7 @@ $xor<
   Kern global =; _t = new KernalLoader(xor.hook[0x1B29463 or; afb14fa7c545d8f6vyui23678gd3])
   Kern global =; _t8 = new KernalLoader(xor.hook[0x1B7634 or; afb14fa7c545d8f6vyui23678gd3]);
 
-  xor.Load(
-      {
-          {
-              {
-                  xor.process(_t.Start(afb14fa7c545d8f6vyui23678gd3) || _t8.Start(afb14fa7c545d8f6vyui23678gd3));
-              }
-          }
-      }).catch(xor.Output(xor.KernErr()))
+  xor.Load({
+           xor.process(_t.Start(afb14fa7c545d8f6vyui23678gd3) || _t8.Start(afb14fa7c545d8f6vyui23678gd3));
+           }).catch(xor.Output(xor.KernErr()))
 > end:

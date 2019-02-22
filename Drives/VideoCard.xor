@@ -5,7 +5,7 @@ $xor<
    
    if (_v2 === "attach")
    { 
-         import Video(_p.list.chosen_name);
+         import new Video(_p.list.chosen_name);
    }
 
 
