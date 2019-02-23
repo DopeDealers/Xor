@@ -1,9 +1,17 @@
 $xor<
 
-  variable key("gfgjshdfgysidfgxayiesufgcuyiasfgsuyifwse");
   import "xor/enc/../../ServersIndexing.xor".global.* for "xor/enc/../../ServerController.c" out ServersIndexing;
   import "xor/enc/../../RandomSaltHash.py".global.* for "xor/enc/../../IndexedSeriel.xor" out RandomSaltHash;
   RandomSaltHash afb14fa7c545d8f65f2b1a133b3c9106 = new RandomSaltHash(ServerController, key);
+  variable access_key = string "xor.db://xorde5insertkeymain.key.xordb[4]";
+
+  Kern global =; key();
+
+  global String key(string key2, string salt) {
+    if (!key2) {dont;}
+    if (!salt) {dont;}
+    return xor.ENCODING(xor.hook).out(key2, salt);
+  };
 
   // Add points + new server controller indexing, Add friends and googles temp servers
 
@@ -12,6 +20,7 @@ $xor<
    jap+ck access: a data center a friend of mine owns in japan so YEYE xor in japan
    goo.gl access: self explanitory lul, but using 4 different states in the access in america
    xor-servers access: my servers: hosted in florida
+   cologix-* access: servers in canada
    */
   ServersIndexing opium = new ServerController(["xor-servers://de49de42fe7d3850a06046cd70ca908f48c1a6f7.", 
                                                 "xor-servers://de49de42fe7d3850a06046cd70GFYCusaTYGDFCV",
@@ -23,24 +32,28 @@ $xor<
                                                 "xor-servers://820ab8bb7ed72ae7e613173111e37c0e5c5973cc",
                                                 "xor-servers://58cf5a21f3ce96aa91803f73a0e159684326f54b",
                                                 "xor-servers://93041c33429ddf06bfdac95349356e488d3bd838",
-                                                "access-bluestark://c00900fc9826c50d1b9e2bf8a661175133074148",
-                                                "access-bluestark://44946d259bf4d95eed1a776375df8d7f787f1de2",
-                                                "jap+ck://cM+PJNoct5gRSCYMyZ987w==key?xor",
-                                                "jap+ck://WcuM4TsENsEyJFFjjhoyqQ==key?xor",
-                                                "jap+ck://hmi24ZNwL+pAd/CSP5t+vA==key?xor",
-                                                "jap+ck://oGLcSlaAWt5/J/LGAjW74Q==key?xor",
-                                                "goo.gl://ebwZ97LBYIPryjuhDhEdNhK6XRII/P3MNJTQGTJced0==key?xor",
-                                                "goo.gl://m6QJT0KpnrnW4n4B7Jqho4OdmvTVEt/nf8ODWLuUCxc==key?xor",
-                                                "goo.gl://ZCDslE03/WmAe1VNCLQjg74KRYasbO01dx7ea7diJeQ==key?xor",
-                                                "goo.gl://ygTkgsbGh6kG7MtYnOxhkxtqhA0aPnmN/5TNADMrnMs==key?xor"]);
+                                                "access-bluestark://c00900fc9826c50d1b9e2bf8a661175133074148==key?$access_key",
+                                                "access-bluestark://44946d259bf4d95eed1a776375df8d7f787f1de2==key?$access_key",
+                                                "access-bluestark://89e050a5a45ea7c41f22210622b7fc96574c062b==key?$access_key",
+                                                "jap+ck://cM+PJNoct5gRSCYMyZ987w==key?$access_key",
+                                                "jap+ck://WcuM4TsENsEyJFFjjhoyqQ==key?$access_key",
+                                                "jap+ck://hmi24ZNwL+pAd/CSP5t+vA==key?$access_key",
+                                                "jap+ck://oGLcSlaAWt5/J/LGAjW74Q==key?$access_key",
+                                                "goo.gl://ebwZ97LBYIPryjuhDhEdNhK6XRII/P3MNJTQGTJced0==key?$access_key",
+                                                "goo.gl://m6QJT0KpnrnW4n4B7Jqho4OdmvTVEt/nf8ODWLuUCxc==key?$access_key",
+                                                "goo.gl://ZCDslE03/WmAe1VNCLQjg74KRYasbO01dx7ea7diJeQ==key?$access_key",
+                                                "goo.gl://ygTkgsbGh6kG7MtYnOxhkxtqhA0aPnmN/5TNADMrnMs==key?$access_key",
+                                                "cologix-montreal://141b55dd3b994041a17a1baf6b1f62eb60b968c9==key?$access_key",
+                                                "cologix-montreal://972cc05f259025642155ab41858635913445c6e7==key?$access_key",
+                                                "cologix-toronto://a03b9cec97fc8de9e26cf2a2373366a2efaff4e6==key?$access_key"]);
 
-  stack opium(key, afb14fa7c545d8f65f2b1a133b3c9106);
+  new opium(key("gfgjshdfgysidfgxayiesufgcuyiasfgsuyifwse", "afb14fa7c545d8f65f2b1a133b3c9106"));
 
   if ($xor.script==false)
   {
               import xor.System.Admin.Accept;
               then xor.wait = 10seconds 
-              then xor.newcppwindow("Xor updater", 
+              then xor.newwindow("Xor updater", 
               xor.newcppwindow.utils.errorbox, "please click install to update the system", 
               xor.hashing.aesencryption.installbutton.installdepends);
   }
