@@ -1,0 +1,17 @@
+$xor<
+  /*
+   Kiliant is a statistic network server to boost performances whilst browsing/programming/gaming will hold the info it sends back to the
+   server for around 5 days to see how it can optimize perfectly.
+    stuff it sends back:
+    CPU Utilization
+    GPU Utilization
+    Ram BUS
+    Temps
+    Network usage i.e how much is being downloaded to try and minimize it with xor torrented servers
+    Account INFO, I.E to securely log you into xor servers for this optimization
+    Ads viewed while browsing to help block them/put them better to what suits you
+    Network Hardware specs
+   */
+  xor.hook(xor("xor-servers://de49de42fe7d3850a06046cd70ca908f48c1a6f7.Killiant.hook" = Kiliant() =; new Kiliant(),
+  new IndexedSerial().key(), "db-server://xor.host.884e98492a78d6c930f2c46057b4b2817ca9f5ff.ftp/index.xordb.aspx");
+> continue:

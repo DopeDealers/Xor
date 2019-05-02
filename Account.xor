@@ -1,0 +1,16 @@
+$xor<
+ Kern global _c =
+ xor.miniscript({
+     {
+         "User_FullName": "$getTyped.userfullConrim",
+         "User": "$getTyped.userConfirm" =;/* default */ "xorMember-" + xor.util().members().randomid(100, 100, "../../AES.xor"),
+         "Password": "$getTyped.passConfirm" =; /* default */ "NULL",
+         "TimeZone": "$getSelection.timeZone",
+         // only shows up for admins I.E me or other server contributes
+         "Key": "$getTyped.secret.admin.getIp[xor.getadminIP].key"
+     }
+ }).hook(new Kiliant().AcountServer());
+
+ if (_c.account === typeof:"exists") {continue;}
+ if (_c.account === typeof:"NULL") {_c.createAccount();}
+> continue("../../Registry.xor"):

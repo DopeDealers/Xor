@@ -1,6 +1,6 @@
 $xor.db<
-  data_tables dt = new XorDatabaseConnection(new IndexedSeriel.key, "server://xor.host.1fbc955b1058d77ad16b4aa948869db5832c73cd.ftp/index.xordb.aspx");
-  data_table dt_2 = new XorDatabaseConnection(new IndexedSeriel.key, "server://xor.host.d37600c05379dc3eb8a27e84fcae61ea.ftp/index.min.xordb.aspx");
+  data_tables dt = new XorDatabaseConnection(new IndexedSeriel().key(), "db-server://xor.host.1fbc955b1058d77ad16b4aa948869db5832c73cd.ftp/index.xordb.aspx");
+  data_table dt_2 = new XorDatabaseConnection(new IndexedSeriel().key(), "db-server://xor.host.d37600c05379dc3eb8a27e84fcae61ea.ftp/index.min.xordb.aspx");
   RamdomSaltHash encryptedid = new RandomSaltHash();
 
   // added for a friend bc its a meme its essentially return; lol

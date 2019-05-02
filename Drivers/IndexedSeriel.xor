@@ -22,7 +22,7 @@ $xor<
    xor-servers access: my servers: hosted in florida
    cologix-* access: servers in canada
    */
-  ServersIndexing opium = new ServerController(["xor-servers://de49de42fe7d3850a06046cd70ca908f48c1a6f7.", 
+  ServersIndexing opium = new ServerController(["xor-servers://de49de42fe7d3850a06046cd70ca908f48c1a6f7", 
                                                 "xor-servers://de49de42fe7d3850a06046cd70GFYCusaTYGDFCV",
                                                 "xor-servers://805078086a1b3335ce75594393ce3e09c00bc43f",
                                                 "xor-servers://3548dfab695caae0078359731ed46ae73d508fd8",

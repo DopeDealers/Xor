@@ -2,7 +2,7 @@ $xor<
    // listing all drives
 
     USB _u = new ExternalDrive(xor.hook[1]);
-    variable _d = { "usb" || "sd" || "sd_micro" || "hdd" || "cd_rom" || "fuck" }
+    variable _d = { "usb" || "sd" || "sd_micro" || "hdd" || "cd_rom" || "fuck" };
 
     if (_u.drive === _d.list)
     {
